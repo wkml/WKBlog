@@ -1,5 +1,6 @@
 package com.wikim.controller;
 
+import com.wikim.annotation.SystemLog;
 import com.wikim.domain.ResponseResult;
 import com.wikim.service.LinkService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,8 @@ public class LinkController {
     private LinkService linkService;
 
     @GetMapping("/getAllLink")
-    public ResponseResult getAllLink(){
+    @SystemLog(businessName = "获取所有友链")
+    public ResponseResult getAllLink() {
         return linkService.getAllLink();
     }
 }

@@ -1,4 +1,4 @@
-package com.wikim.handler;
+package com.wikim.handler.security;
 
 import com.alibaba.fastjson.JSON;
 import com.wikim.domain.ResponseResult;

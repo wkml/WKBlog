@@ -1,4 +1,4 @@
-package com.wikim.handler;
+package com.wikim.handler.exception;
 
 import com.wikim.domain.ResponseResult;
 import com.wikim.enums.AppHttpCodeEnum;

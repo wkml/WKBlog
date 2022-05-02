@@ -1,6 +1,7 @@
 package com.wikim.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.wikim.domain.ResponseResult;
 import com.wikim.domain.entity.User;
 
 
@@ -12,5 +13,10 @@ import com.wikim.domain.entity.User;
  */
 public interface UserService extends IService<User> {
 
+    ResponseResult register(User user);
+
+    ResponseResult userInfo();
+
+    ResponseResult updateUserInfo(User user);
 }
 

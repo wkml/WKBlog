@@ -1,5 +1,6 @@
 package com.wikim.controller;
 
+import com.wikim.annotation.SystemLog;
 import com.wikim.domain.ResponseResult;
 import com.wikim.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +16,8 @@ public class CategoryController {
     private CategoryService categoryService;
 
     @GetMapping("/getCategoryList")
-    public ResponseResult getCategoryList(){
+    @SystemLog(businessName = "获取所有分类")
+    public ResponseResult getCategoryList() {
         return categoryService.getCategoryList();
     }
 

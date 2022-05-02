@@ -13,10 +13,16 @@ spring:
 mybatis-plus:
   configuration:
     # 日志
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
   global-config:
     db-config:
       logic-delete-field: delFlag
       logic-delete-value: 1
       logic-not-delete-value: 0
       id-type: auto
+oss:
+  accessKeyId: LTAI5tNtdGPYPp9SivXa9e9v
+  accessKeySecret: PmqwVMQilLdWdH9jBsdjafiS1FIyJS
+  bucketName: aliyun-wkk
+  endpoint: https://oss-cn-beijing.aliyuncs.com

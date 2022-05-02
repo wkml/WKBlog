@@ -1,6 +1,1 @@
-com\wikim\handler\AuthenticationEntryPointImpl.class
 com\wikim\controller\LinkController.class
-com\wikim\handler\AccessDeniedHandlerImpl.class
-com\wikim\exception\SystemException.class
-com\wikim\filter\JwtAuthenticationTokenFilter.class
-com\wikim\handler\GlobalExceptionHandler.class
