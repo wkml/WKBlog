@@ -8,6 +8,10 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 
+/**
+ * @author wkml994
+ * 实现UserDetail接口，用来给detail_service进行返回
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

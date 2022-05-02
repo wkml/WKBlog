@@ -2,6 +2,7 @@ package com.wikim.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.wikim.domain.entity.User;
+import org.apache.ibatis.annotations.Mapper;
 
 
 /**
@@ -10,6 +11,7 @@ import com.wikim.domain.entity.User;
  * @author makejava
  * @since 2022-04-27 22:24:30
  */
+@Mapper
 public interface UserMapper extends BaseMapper<User> {
 
 }
